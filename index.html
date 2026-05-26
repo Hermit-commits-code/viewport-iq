@@ -4,204 +4,494 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/output.css">
   <title>Viewport IQ</title>
 </head>
 
-<body>
-  <header>
-    <nav class="nav-main">
-      <div class="nav-left">
-        <p class="logo">Viewport IQ</p>
-      </div>
-      <div class="nav-right">
-        <ul class="nav-links">
-          <li class="nav-item">
-            <a href="#features">
-              Features
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#report">
-              Report
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#breakpoints">
-              Breakpoints
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#roadmap">
-              Roadmap
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#run-audit">
-              Run Audit
-            </a>
-          </li>
-        </ul>
-      </div>
+<body class="bg-slate-950 text-slate-50 antialiased">
+  <header class="border-b border-slate-800 bg-slate-950">
+    <nav
+      class="mx-auto flex w-[min(100%-2rem,1200px)] flex-col gap-4 py-4 md:flex-row md:items-center md:justify-between">
+      <a href="index.html" class="text-xl font-bold text-slate-50">
+        Viewport IQ
+      </a>
+
+      <ul class="flex flex-wrap gap-4 text-sm font-medium text-slate-400">
+        <li><a class="hover:text-sky-400 focus-visible:text-sky-400" href="#features">Features</a></li>
+        <li><a class="hover:text-sky-400 focus-visible:text-sky-400" href="#report">Report</a></li>
+        <li><a class="hover:text-sky-400 focus-visible:text-sky-400" href="#breakpoints">Breakpoints</a></li>
+        <li><a class="hover:text-sky-400 focus-visible:text-sky-400" href="#roadmap">Roadmap</a></li>
+        <li><a class="hover:text-sky-400 focus-visible:text-sky-400" href="#run-audit">Run Audit</a></li>
+      </ul>
     </nav>
   </header>
-  <section class="hero">
-    <div class="h-left">
-      <h2>Responsive QA Tool</h2>
-      <h3>Find layout issues before your users do.</h3>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime repellendus ducimus, neque fuga eius itaque
-        officiis mollitia. Voluptatum, laboriosam officia.</p>
-      <div class="hero-actions">
-        <a href="#">Start Static Demo</a>
-        <a href="#">View Sample Report</a>
+  <section class="border-t border-slate-800 py-24">
+    <div
+      class="mx-auto grid w-[min(100%-2rem,1200px)] grid-cols-1 items-center gap-12 lg:grid-cols-[minmax(0,1.4fr)_minmax(320px,0.8fr)]">
+      <div>
+        <p class="mb-4 text-sm font-bold uppercase tracking-[0.08em] text-sky-400">
+          Responsive QA Tool
+        </p>
+
+        <h1
+          class="mb-6 max-w-4xl text-5xl font-bold leading-tight tracking-[-0.05em] text-slate-50 md:text-6xl lg:text-7xl">
+          Find layout issues before your users do.
+        </h1>
+
+        <p class="mb-8 max-w-2xl text-lg leading-8 text-slate-400">
+          Viewport IQ is a responsive QA concept for auditing layouts across key
+          viewport sizes, catching overflow, broken grids, cramped typography, and
+          mobile usability issues before release.
+        </p>
+
+        <div class="flex flex-wrap gap-4">
+          <a href="#run-audit"
+            class="inline-flex min-h-[44px] items-center justify-center rounded-full bg-sky-400 px-5 py-3 font-bold text-slate-950 transition hover:-translate-y-0.5 hover:bg-sky-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-400">
+            Start Static Demo
+          </a>
+
+          <a href="#report"
+            class="inline-flex min-h-[44px] items-center justify-center rounded-full border border-slate-700 px-5 py-3 font-bold text-slate-50 transition hover:-translate-y-0.5 hover:border-sky-400 hover:text-sky-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-400">
+            View Sample Report
+          </a>
+        </div>
       </div>
+
+      <aside class="rounded-2xl border border-slate-700 bg-slate-900 p-6 shadow-lg shadow-black/20">
+        <div class="mb-6 flex items-center justify-between gap-4 border-b border-slate-700 pb-4">
+          <div>
+            <p class="text-sm font-bold uppercase tracking-[0.08em] text-sky-400">
+              Scan Summary
+            </p>
+            <h2 class="mt-2 text-2xl font-bold text-slate-50">
+              Responsive Audit
+            </h2>
+          </div>
+
+          <span class="rounded-full bg-green-400/10 px-3 py-1 text-sm font-semibold text-green-400">
+            Complete
+          </span>
+        </div>
+
+        <dl class="grid gap-4">
+          <div class="flex items-center justify-between gap-4 rounded-xl bg-slate-800/70 p-4">
+            <dt class="text-slate-400">Pages scanned</dt>
+            <dd class="font-bold text-slate-50">3</dd>
+          </div>
+
+          <div class="flex items-center justify-between gap-4 rounded-xl bg-slate-800/70 p-4">
+            <dt class="text-slate-400">Viewports tested</dt>
+            <dd class="font-bold text-slate-50">6</dd>
+          </div>
+
+          <div class="flex items-center justify-between gap-4 rounded-xl bg-slate-800/70 p-4">
+            <dt class="text-slate-400">Issues found</dt>
+            <dd class="font-bold text-red-400">12</dd>
+          </div>
+
+          <div class="flex items-center justify-between gap-4 rounded-xl bg-slate-800/70 p-4">
+            <dt class="text-slate-400">Severity</dt>
+            <dd class="font-bold text-orange-400">High</dd>
+          </div>
+        </dl>
+      </aside>
     </div>
-    <div class="h-right">
-      <div class="card">
-        <div class="card-header">
-          <h2> Scan Summary Card</h2>
-        </div>
-        <div class="card-body">
-          <ul>
-            <li><span> - </span>Status: Complete</li>
-            <li><span> - </span>Pages: 3</li>
-            <li><span> - </span>Viewports: 6</li>
-            <li><span> - </span>Issues: 12</li>
-            <li><span> - </span>Severity: High</li>
-          </ul>
-        </div>
+  </section>
+  <!-- Breakpoints -->
+  <section id="breakpoints" class="border-t border-slate-800 py-20">
+    <div class="mx-auto w-[min(100%-2rem,1200px)]">
+      <div class="mb-8 max-w-3xl">
+        <p class="mb-3 text-sm font-bold uppercase tracking-[0.08em] text-sky-400">
+          Test Matrix
+        </p>
+
+        <h2 class="mb-4 text-4xl font-bold tracking-[-0.04em] text-slate-50">
+          Key responsive breakpoints
+        </h2>
+
+        <p class="text-lg leading-8 text-slate-400">
+          Audit layouts across common desktop, tablet, and mobile viewport widths.
+        </p>
+      </div>
+
+      <div class="flex flex-wrap gap-3">
+        <a href="#"
+          class="rounded-full border border-slate-700 bg-slate-900 px-5 py-3 font-semibold text-slate-300 transition hover:border-sky-400 hover:text-sky-400">
+          1440px
+        </a>
+
+        <a href="#"
+          class="rounded-full border border-slate-700 bg-slate-900 px-5 py-3 font-semibold text-slate-300 transition hover:border-sky-400 hover:text-sky-400">
+          1024px
+        </a>
+
+        <a href="#"
+          class="rounded-full border border-slate-700 bg-slate-900 px-5 py-3 font-semibold text-slate-300 transition hover:border-sky-400 hover:text-sky-400">
+          768px
+        </a>
+
+        <a href="#"
+          class="rounded-full border border-slate-700 bg-slate-900 px-5 py-3 font-semibold text-slate-300 transition hover:border-sky-400 hover:text-sky-400">
+          480px
+        </a>
+
+        <a href="#"
+          class="rounded-full border border-slate-700 bg-slate-900 px-5 py-3 font-semibold text-slate-300 transition hover:border-sky-400 hover:text-sky-400">
+          390px
+        </a>
       </div>
     </div>
   </section>
-  <section class="breakpoint-section" id="breakpoints">
-    <h2>Breakpoints</h2>
-    <div class="breakpoints">
-      <a href="#"> 1440px</a>
-      <a href="#"> 1024px</a>
-      <a href="#"> 768px</a>
-      <a href="#">480px</a>
-      <a href="#">390px</a>
+  <section id="report" class="border-t border-slate-800 py-20">
+    <div class="mx-auto w-[min(100%-2rem,1200px)]">
+      <div class="mb-10 max-w-3xl">
+        <p class="mb-3 text-sm font-bold uppercase tracking-[0.08em] text-sky-400">
+          Sample Report
+        </p>
+
+        <h2 class="mb-4 text-4xl font-bold tracking-[-0.04em] text-slate-50">
+          Responsive audit results
+        </h2>
+
+        <p class="text-lg leading-8 text-slate-400">
+          Example issue cards showing severity levels, scan status, viewport coverage,
+          and layout problems discovered during testing.
+        </p>
+      </div>
+
+      <div class="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+        <article class="rounded-2xl border border-red-400/60 bg-slate-900 p-6">
+          <p class="mb-4 text-sm font-bold uppercase tracking-[0.08em] text-red-400">
+            High Severity
+          </p>
+
+          <h3 class="mb-4 text-2xl font-bold text-slate-50">
+            Horizontal overflow detected
+          </h3>
+
+          <p class="mb-6 leading-7 text-slate-400">
+            Content exceeds the viewport at mobile widths, creating unwanted horizontal scrolling.
+          </p>
+
+          <dl class="grid gap-3 text-sm">
+            <div class="flex justify-between gap-4">
+              <dt class="text-slate-400">Status</dt>
+              <dd class="font-semibold text-slate-50">Complete</dd>
+            </div>
+
+            <div class="flex justify-between gap-4">
+              <dt class="text-slate-400">Viewport</dt>
+              <dd class="font-semibold text-slate-50">390px</dd>
+            </div>
+
+            <div class="flex justify-between gap-4">
+              <dt class="text-slate-400">Impact</dt>
+              <dd class="font-semibold text-red-400">High</dd>
+            </div>
+          </dl>
+        </article>
+
+        <article class="rounded-2xl border border-orange-400/60 bg-slate-900 p-6">
+          <p class="mb-4 text-sm font-bold uppercase tracking-[0.08em] text-orange-400">
+            Medium Severity
+          </p>
+
+          <h3 class="mb-4 text-2xl font-bold text-slate-50">
+            Typography line length issue
+          </h3>
+
+          <p class="mb-6 leading-7 text-slate-400">
+            Paragraph text becomes difficult to scan on wider screens due to uncontrolled line length.
+          </p>
+
+          <dl class="grid gap-3 text-sm">
+            <div class="flex justify-between gap-4">
+              <dt class="text-slate-400">Status</dt>
+              <dd class="font-semibold text-slate-50">Complete</dd>
+            </div>
+
+            <div class="flex justify-between gap-4">
+              <dt class="text-slate-400">Viewport</dt>
+              <dd class="font-semibold text-slate-50">1440px</dd>
+            </div>
+
+            <div class="flex justify-between gap-4">
+              <dt class="text-slate-400">Impact</dt>
+              <dd class="font-semibold text-orange-400">Medium</dd>
+            </div>
+          </dl>
+        </article>
+
+        <article class="rounded-2xl border border-green-400/60 bg-slate-900 p-6 md:col-span-2 xl:col-span-1">
+          <p class="mb-4 text-sm font-bold uppercase tracking-[0.08em] text-green-400">
+            Low Severity
+          </p>
+
+          <h3 class="mb-4 text-2xl font-bold text-slate-50">
+            Minor spacing inconsistency
+          </h3>
+
+          <p class="mb-6 leading-7 text-slate-400">
+            Card spacing differs slightly between tablet and desktop layouts.
+          </p>
+
+          <dl class="grid gap-3 text-sm">
+            <div class="flex justify-between gap-4">
+              <dt class="text-slate-400">Status</dt>
+              <dd class="font-semibold text-slate-50">Complete</dd>
+            </div>
+
+            <div class="flex justify-between gap-4">
+              <dt class="text-slate-400">Viewport</dt>
+              <dd class="font-semibold text-slate-50">768px</dd>
+            </div>
+
+            <div class="flex justify-between gap-4">
+              <dt class="text-slate-400">Impact</dt>
+              <dd class="font-semibold text-green-400">Low</dd>
+            </div>
+          </dl>
+        </article>
+      </div>
     </div>
   </section>
-  <section class="sample-report" id="report">
-    <h2 class="sample-header">Sample Report</h2>
-    <div class="report-cards">
-      <div class="card high-issue">
-        <div class="card-header">
-          <h3> High Issue Card</h3>
-        </div>
-        <div class="card-body">
-          <ul>
-            <li><span> - </span>Status: Complete</li>
-            <li><span> - </span>Pages: 3</li>
-            <li><span> - </span>Viewports: 6</li>
-            <li><span> - </span>Issues: 12</li>
-            <li><span> - </span>Severity: High</li>
-          </ul>
-        </div>
+  <!-- Features -->
+  <section id="features" class="border-t border-slate-800 py-20">
+    <div class="mx-auto w-[min(100%-2rem,1200px)]">
+      <div class="mb-10 max-w-3xl">
+        <p class="mb-3 text-sm font-bold uppercase tracking-[0.08em] text-sky-400">
+          Features
+        </p>
+
+        <h2 class="mb-4 text-4xl font-bold tracking-[-0.04em] text-slate-50">
+          Responsive QA tooling concepts
+        </h2>
+
+        <p class="text-lg leading-8 text-slate-400">
+          Viewport IQ focuses on layout validation, usability auditing, and responsive
+          quality assurance workflows.
+        </p>
       </div>
-      <div class="card medium-issue">
-        <div class="card-header">
-          <h3> Medium Issue Card</h3>
-        </div>
-        <div class="card-body">
-          <ul>
-            <li><span> - </span>Status: Complete</li>
-            <li><span> - </span>Pages: 3</li>
-            <li><span> - </span>Viewports: 6</li>
-            <li><span> - </span>Issues: 12</li>
-            <li><span> - </span>Severity: Medium</li>
-          </ul>
-        </div>
-      </div>
-      <div class="card low-issue">
-        <div class="card-header">
-          <h3> Low Issue Card</h3>
-        </div>
-        <div class="card-body">
-          <ul>
-            <li><span> - </span>Status: Complete</li>
-            <li><span> - </span>Pages: 3</li>
-            <li><span> - </span>Viewports: 6</li>
-            <li><span> - </span>Issues: 12</li>
-            <li><span> - </span>Severity: Low</li>
-          </ul>
-        </div>
+
+      <div class="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+        <article
+          class="rounded-2xl border border-slate-700 bg-slate-900 p-6 transition hover:-translate-y-1 hover:border-sky-400">
+          <div class="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-sky-400/10 text-2xl">
+            ⚡
+          </div>
+
+          <h3 class="mb-3 text-2xl font-bold text-slate-50">
+            Overflow Detection
+          </h3>
+
+          <p class="leading-7 text-slate-400">
+            Catch horizontal scrolling, clipped content, and layout overflow across
+            critical viewport widths.
+          </p>
+        </article>
+
+        <article
+          class="rounded-2xl border border-slate-700 bg-slate-900 p-6 transition hover:-translate-y-1 hover:border-sky-400">
+          <div class="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-sky-400/10 text-2xl">
+            📱
+          </div>
+
+          <h3 class="mb-3 text-2xl font-bold text-slate-50">
+            Touch Target Audits
+          </h3>
+
+          <p class="leading-7 text-slate-400">
+            Flag buttons, links, and interactive elements that become difficult to use
+            on smaller touch devices.
+          </p>
+        </article>
+
+        <article
+          class="rounded-2xl border border-slate-700 bg-slate-900 p-6 transition hover:-translate-y-1 hover:border-sky-400">
+          <div class="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-sky-400/10 text-2xl">
+            🧱
+          </div>
+
+          <h3 class="mb-3 text-2xl font-bold text-slate-50">
+            Grid Validation
+          </h3>
+
+          <p class="leading-7 text-slate-400">
+            Detect broken columns, collapsing layouts, uneven spacing, and unstable
+            responsive grid behavior.
+          </p>
+        </article>
+
+        <article
+          class="rounded-2xl border border-slate-700 bg-slate-900 p-6 transition hover:-translate-y-1 hover:border-sky-400">
+          <div class="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-sky-400/10 text-2xl">
+            🔤
+          </div>
+
+          <h3 class="mb-3 text-2xl font-bold text-slate-50">
+            Typography Analysis
+          </h3>
+
+          <p class="leading-7 text-slate-400">
+            Review readability issues such as excessive line length, cramped spacing,
+            and weak visual hierarchy.
+          </p>
+        </article>
+
+        <article
+          class="rounded-2xl border border-slate-700 bg-slate-900 p-6 transition hover:-translate-y-1 hover:border-sky-400">
+          <div class="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-sky-400/10 text-2xl">
+            🧭
+          </div>
+
+          <h3 class="mb-3 text-2xl font-bold text-slate-50">
+            Navigation Audits
+          </h3>
+
+          <p class="leading-7 text-slate-400">
+            Validate wrapping behavior, spacing systems, overflow handling, and mobile
+            navigation usability.
+          </p>
+        </article>
+
+        <article
+          class="rounded-2xl border border-slate-700 bg-slate-900 p-6 transition hover:-translate-y-1 hover:border-sky-400">
+          <div class="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-sky-400/10 text-2xl">
+            📝
+          </div>
+
+          <h3 class="mb-3 text-2xl font-bold text-slate-50">
+            Markdown Reports
+          </h3>
+
+          <p class="leading-7 text-slate-400">
+            Export responsive audit summaries into clean developer-friendly markdown
+            documentation.
+          </p>
+        </article>
       </div>
     </div>
   </section>
-  <section class="features-section" id="features">
-    <h2 class="section-header">Features</h2>
-    <div class="features-grid">
-      <div class="card feature-card">
-        <h3>Overflow Detection</h3>
-        <p>Catch horizontal scrolling and clipped content across key viewport sizes.</p>
+  <section id="roadmap" class="border-t border-slate-800 py-20">
+    <div class="mx-auto w-[min(100%-2rem,1200px)]">
+      <div class="mb-10 max-w-3xl">
+        <p class="mb-3 text-sm font-bold uppercase tracking-[0.08em] text-sky-400">
+          Workflow
+        </p>
+
+        <h2 class="mb-4 text-4xl font-bold tracking-[-0.04em] text-slate-50">
+          Responsive audit workflow
+        </h2>
+
+        <p class="text-lg leading-8 text-slate-400">
+          A structured QA process for identifying, reviewing, correcting, and validating
+          responsive layout issues.
+        </p>
       </div>
 
-      <div class="card feature-card">
-        <h3>Typography Checks</h3>
-        <p>Review font scaling, line length, and readability issues before release.</p>
-      </div>
-      <div class="card feature-card">
-        <h3>Grid Validation</h3>
-        <p>Inspect layout shifts, uneven columns, and broken responsive behavior.</p>
-      </div>
-      <div class="card feature-card">
-        <h3>Touch Targets</h3>
-        <p>Flag buttons and links that become difficult to tap on mobile screens.</p>
-      </div>
-      <div class="card feature-card">
-        <h3>Navigation Audit</h3>
-        <p>Check nav wrapping, overflow, spacing, and mobile usability.</p>
-      </div>
-      <div class="card feature-card">
-        <h3>Markdown Export</h3>
-        <p>Generate clean audit notes your team can copy into issues or docs.</p>
+      <div class="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+
+        <!-- Step -->
+        <article
+          class="rounded-2xl border border-slate-700 bg-slate-900 p-6 transition hover:-translate-y-1 hover:border-sky-400">
+          <span
+            class="mb-5 inline-flex rounded-full bg-sky-400/10 px-3 py-1 text-sm font-bold tracking-[0.08em] text-sky-400">
+            01
+          </span>
+
+          <h3 class="mb-3 text-2xl font-bold text-slate-50">
+            Scan
+          </h3>
+
+          <p class="leading-7 text-slate-400">
+            Run viewport analysis across desktop, tablet, and mobile breakpoints.
+          </p>
+        </article>
+
+        <!-- Step -->
+        <article
+          class="rounded-2xl border border-slate-700 bg-slate-900 p-6 transition hover:-translate-y-1 hover:border-sky-400">
+          <span
+            class="mb-5 inline-flex rounded-full bg-sky-400/10 px-3 py-1 text-sm font-bold tracking-[0.08em] text-sky-400">
+            02
+          </span>
+
+          <h3 class="mb-3 text-2xl font-bold text-slate-50">
+            Review
+          </h3>
+
+          <p class="leading-7 text-slate-400">
+            Inspect layout instability, typography issues, spacing problems, and overflow.
+          </p>
+        </article>
+
+        <!-- Step -->
+        <article
+          class="rounded-2xl border border-slate-700 bg-slate-900 p-6 transition hover:-translate-y-1 hover:border-sky-400">
+          <span
+            class="mb-5 inline-flex rounded-full bg-sky-400/10 px-3 py-1 text-sm font-bold tracking-[0.08em] text-sky-400">
+            03
+          </span>
+
+          <h3 class="mb-3 text-2xl font-bold text-slate-50">
+            Fix
+          </h3>
+
+          <p class="leading-7 text-slate-400">
+            Apply responsive corrections to spacing systems, layouts, grids, and UI hierarchy.
+          </p>
+        </article>
+
+        <!-- Step -->
+        <article
+          class="rounded-2xl border border-slate-700 bg-slate-900 p-6 transition hover:-translate-y-1 hover:border-sky-400">
+          <span
+            class="mb-5 inline-flex rounded-full bg-sky-400/10 px-3 py-1 text-sm font-bold tracking-[0.08em] text-sky-400">
+            04
+          </span>
+
+          <h3 class="mb-3 text-2xl font-bold text-slate-50">
+            Validate
+          </h3>
+
+          <p class="leading-7 text-slate-400">
+            Re-test the application across all target breakpoints to verify stability.
+          </p>
+        </article>
+
       </div>
     </div>
   </section>
-  <section class="workflow-section" id="roadmap">
-    <h2 class="section-header">Workflow</h2>
+  <section id="run-audit" class="border-t border-slate-800 py-24">
+    <div class="mx-auto w-[min(100%-2rem,1200px)]">
+      <div class="rounded-[2rem] border border-slate-700 bg-slate-900 p-8 text-center md:p-14">
+        <p class="mb-4 text-sm font-bold uppercase tracking-[0.08em] text-sky-400">
+          Run Audit
+        </p>
 
-    <div class="workflow">
+        <h2
+          class="mx-auto mb-6 max-w-4xl text-4xl font-bold leading-tight tracking-[-0.04em] text-slate-50 md:text-5xl lg:text-6xl">
+          Responsive design is more than “does it fit?”
+        </h2>
 
-      <div class="card workflow-card">
-        <span class="step-number">01</span>
-        <h3>Scan</h3>
-        <p>Run viewport analysis across multiple responsive breakpoints.</p>
+        <p class="mx-auto mb-8 max-w-2xl text-lg leading-8 text-slate-400">
+          Viewport IQ helps frontend teams identify layout instability, spacing
+          problems, overflow issues, typography failures, and mobile usability
+          concerns before release.
+        </p>
+
+        <div class="flex flex-wrap justify-center gap-4">
+          <a href="#report"
+            class="inline-flex min-h-[44px] items-center justify-center rounded-full bg-sky-400 px-5 py-3 font-bold text-slate-950 transition hover:-translate-y-0.5 hover:bg-sky-300">
+            View Sample Audit
+          </a>
+
+          <a href="#features"
+            class="inline-flex min-h-[44px] items-center justify-center rounded-full border border-slate-700 px-5 py-3 font-bold text-slate-50 transition hover:-translate-y-0.5 hover:border-sky-400 hover:text-sky-400">
+            Explore Features
+          </a>
+        </div>
       </div>
-
-      <div class="card workflow-card">
-        <span class="step-number">02</span>
-        <h3>Review</h3>
-        <p>Inspect layout issues and responsive inconsistencies.</p>
-      </div>
-
-      <div class="card workflow-card">
-        <span class="step-number">03</span>
-        <h3>Fix</h3>
-        <p>Apply spacing, typography, and layout corrections.</p>
-      </div>
-
-      <div class="card workflow-card">
-        <span class="step-number">04</span>
-        <h3>Rescan</h3>
-        <p>Verify improvements across all target viewport sizes.</p>
-      </div>
-
-    </div>
-  </section>
-  <section class="cta-section" id="run-audit">
-    <div class="cta-content">
-      <h2>Responsive design is more than “does it fit?”</h2>
-
-      <p>
-        Viewport IQ helps teams catch layout problems before users ever see them.
-      </p>
-
-      <a href="#" class="cta-btn">
-        [ View Sample Audit ]
-      </a>
     </div>
   </section>
 </body>
